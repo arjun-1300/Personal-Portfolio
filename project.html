@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <!-- Profile section with avatar and name/title -->
+    <div class="profile">
+      <a href="index.html"><div class="avatar"></div></a>
+      <span class="name">Arjun</span>
+      <span class="title">Web Developer</span>
+    </div>
+  
+    <!-- Navigation links (visible on desktop) -->
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="skills&qualification.html">Skills & Qualification</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hamburger icon (only visible on mobile/tablet) -->
+    <div id="hamburgerIcon" class="icon" onclick="toggleMenu()">
+      <!-- Hamburger SVG Icon -->
+      <svg class="ham-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+      </svg>
+    </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="skills&qualification.html">Skills & Qualification</a>
+  <a href="project.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+  const menu = document.getElementById('menu');
+  
+  // Toggle the active class to show/hide the menu
+  menu.classList.toggle('active');
+}
+
+</script>
+
+
+<main>
+  <div class="project-section">
+    <div class="project-heading">
+      <h1>Project</h1>
+    </div>
+
+    <div class="project-item">
+      <div class="project-description">
+        <h2>Personal Portfolio</h2>
+        <p>
+          This introduction page showcases <strong>Arjun</strong>, a third-year Computer Engineering student and <strong>Web Developer</strong>. It features links to <strong>Skills</strong>, <strong>Projects</strong>, and a <strong>Download Resume</strong> button, highlighting <strong>HTML</strong> and <strong>CSS</strong> skills.
+        </p>   
+        <div class="text"><a href="" target="_blank">view live</a></div>                            
+      </div>
+
+      <div class="project-image">
+        <img src="images/project-1.jpg" alt="project-1 image"  height="250px" width="400px">
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-description">
+        <h2>Jovian Company</h2>
+        <p>
+          The <strong>"About Jovian"</strong> webpage highlights its mission to create a premier online technical university, featuring beginner-friendly courses for over <strong>300,000</strong> users.
+        </p>   
+        <div class="text"><a href="https://arjun-1300.github.io/Company-Website/" target="_blank">view live</a></div>                        
+      </div>
+
+      <div class="project-image">
+        <img src="images/project-2.jpg" alt="project-2 image"  height="250px" width="400px">
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-description">
+        <h2>Coffee shop</h2>
+        <p>
+          This project showcases a visually appealing <strong>coffee shop menu</strong> for <strong>"Starbugs"</strong>, featuring a warm <strong>coffee-bean background</strong>. It includes <strong>Coffee</strong> and <strong>Desserts</strong> sections, demonstrating core <strong>HTML</strong> and <strong>CSS</strong> skills.
+        </p>  
+        <div class="text"><a href="https://arjun-1300.github.io/Coffee-Shop/" target="_blank">view live</a></div>                     
+      </div>
+
+      <div class="project-image">
+        <img src="images/project-3.jpg" alt="project-3 image" height="250px" width="400px">
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-description">
+        <h2>Registration Form</h2>
+        <p>
+          This project features a simple <strong>registration form</strong> for user accounts, collecting <strong>First Name</strong>, <strong>Last Name</strong>, <strong>Email</strong>, and <strong>Password</strong>, with an <strong>Account Type</strong> option. It demonstrates core <strong>HTML</strong> and <strong>CSS</strong> skills.
+      </p>    
+        <div class="text"><a href="https://arjun-1300.github.io/Registration-Form/" target="_blank">view live</a></div>                
+      </div>
+
+      <div class="project-image">
+        <img src="images/project-4.jpg" alt="project-4 image" height="250px" width="400px">
+      </div>
+    </div>
+  </div>
+  
+</main>
+
+<!-- footer section -->
+<footer>
+
+  <div class="footer-content">
+    <div class="phone">
+      <h3>Phone</h3>
+      <p>+91 6385325221</p>
+    </div>
+
+    <div class="email">
+      <h3>Email</h3>
+      <p>arjunn19m@gmail.com</p>
+    </div>
+
+    <div class="follow">
+      <h3>Follow Me</h3>
+      <div class="social-media-logo">
+        <a href="linkedin.com" target="_blank"><img src="images/linkedin.png" alt="linkedIn image" height="15px" width="15px"></a>
+        <!-- <a href="instagram.com"><img src="images/instagram.png" alt="instagram image" height="15px" width="15px"></a> -->
+        <a href="https://github.com/arjun-1300" target="_blank"><img src="images/github.png" alt="github image" height="18px" width="18px"></a>
+      </div>
+    </div>
+
+    <div id="copyrights">
+      <p class="p1">&copy; 2024 By Arjun. </p>
+      <p>All rights reserved</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

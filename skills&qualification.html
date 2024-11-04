@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Skills &amp; Qualification</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <!-- Profile section with avatar and name/title -->
+    <div class="profile">
+      <a href="index.html"><div class="avatar"></div></a>
+      <span class="name">Arjun</span>
+      <span class="title">Web Developer</span>
+    </div>
+  
+    <!-- Navigation links (visible on desktop) -->
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="skills&qualification.html">Skills & Qualification</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hamburger icon (only visible on mobile/tablet) -->
+    <div id="hamburgerIcon" class="icon" onclick="toggleMenu()">
+      <!-- Hamburger SVG Icon -->
+      <svg class="ham-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+      </svg>
+    </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="skills&qualification.html">Skills & Qualification</a>
+  <a href="project.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+  const menu = document.getElementById('menu');
+  
+  // Toggle the active class to show/hide the menu
+  menu.classList.toggle('active');
+}
+
+</script>
+
+<main>
+
+  <section>
+    <div class="education-section">
+      <h2>Education</h2>
+      
+      <div class="education-item">
+        <div class="education-date">2022 - 2025</div>
+        <div class="education-details">
+          <h3>VSVN Polytechnic College, Virudhunagar | Diploma in Computer Science</h3>
+          <p>Currently studying in 3rd year with an overall percentage of 96.5.</p>
+        </div>
+      </div>
+    
+      <div class="education-item">
+        <div class="education-date">2021 - 2022</div>
+        <div class="education-details">
+          <h3>Saliyar Mahajana Higher Secondary School, Aruppukottai | 10th Standard (SSLC)</h3>
+          <p>Finished with a percentage of 92%.</p>
+        </div>
+      </div>
+    </div>   
+  </section>
+
+  <section>
+    <div class="skill-section">
+      <h2>Skills</h2>
+      
+      <div class="skill-item">
+          <div class="skill-heading">Front-End Languages</div>
+          <div class="skill-details">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+      </div>
+  
+      <div class="skill-item">
+          <div class="skill-heading">Back-End Languages</div>
+          <div class="skill-details">
+            <ul>
+              <li>C</li>
+              <li>Java</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+</section>
+</main>
+
+<footer>
+
+  <div class="footer-content">
+    <div class="phone">
+      <h3>Phone</h3>
+      <p>+91 6385325221</p>
+    </div>
+
+    <div class="email">
+      <h3>Email</h3>
+      <p>arjunn19m@gmail.com</p>
+    </div>
+
+    <div class="follow">
+      <h3>Follow Me</h3>
+      <div class="social-media-logo">
+        <a href="linkedin.com" target="_blank"><img src="images/linkedin.png" alt="linkedIn image" height="15px" width="15px"></a>
+        <!--<a href="instagram.com"><img src="images/instagram.png" alt="instagram image" height="15px" width="15px"></a>-->
+        <a href="https://github.com/arjun-1300" target="_blank"><img src="images/github.png" alt="github image" height="18px" width="18px"></a>
+      </div>
+    </div>
+
+    <div id="copyrights">
+      <p class="p1">&copy; 2024 By Arjun. </p>
+      <p>All rights reserved</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
